@@ -1,0 +1,121 @@
+<html>
+     <head>
+        <title>Саша Дмитриенко</title>
+        <meta charset="UTF-8" href="лр-5.css">
+        <style type="text/css">
+            body
+            {
+                background-color: azure;
+                margin-left: 45px;
+                margin-right: 40px;
+            }
+            p
+            {
+                color: cornflowerblue;
+                font-size: 50px;
+            }
+              .photo 
+            {
+                background-color: cornflowerblue; 
+                width: 305px;
+                margin: 0 30px 30px 0; 
+                padding: 10px 0; 
+                text-align: center;
+                display: inline-block;
+            }
+            .photo img 
+            {
+                border: 2px solid blue; 
+            }
+            .photo span
+            {
+                margin: 0; 
+                font-size: 20px;
+                color: azure;
+            } 
+             .block1
+            {
+                display: inline-block;
+                position: absolute;
+                margin-top: 15px;
+            }
+             .block2
+            {
+                display: inline-block;
+                position: absolute;
+                top: 25px;
+                right: 80px;
+            }
+             .vreska p
+            {
+                background: white;
+                width: 300px;
+                padding: 12px;
+                border-style: dotted;
+                border-width: medium;
+                border-color: cornflowerblue;
+                font-style: oblique;
+                font-size: 25px;
+                position: relative;
+                left: 510px;
+            }
+             a{
+            color: cornflowerblue;
+            line-height: 1;
+            text-decoration:none; /*убирает стандартное подчеркивание ссылки*/
+            cursor: pointer; /*изменяет вид курсора при наведении на блок*/
+            position:relative; /*устанавливает длину подчеркивания в зависимости от длины текстовой строки (иначе подчеркивается вся строка во весь экран)*/
+            font-size: 40pt;
+        }
+        a:after {
+            background-color: cornflowerblue;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0px;
+            left:50%;
+            position:absolute;
+            -webkit-transition: width .3s ease-in-out;
+            -moz-transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+            -webkit-transform:translateX(-50%);
+            -moz-transform:translateX(-50%);
+            transform:translateX(-50%);
+        }
+        a:hover:after,
+        a:focus:after {
+            width: 100%;
+        }/*живое подчеркивание*/
+         </style>
+    </head>
+    <body >
+        <div class="block1">
+            <hr width = "400" color = "cornflowerblue">
+        </div>
+        <a href="https://www.instagram.com/too_dark_fog/"><p align = "center">Дмитриенко Александр</a>
+        <div class="block2">
+            <hr width = "350" color = "cornflowerblue" align = "right">
+        </div>
+         <div class="photo">
+            <p><img src= "img/IMG_5505.jpg" width="300" height="378"></p>
+            <p><span style="font-style: italic">Саша зимой</span></p>
+    </div>
+    <div class="photo">
+            <p><img src="img/IMG_5502.jpg" width="300" height="378"></p>
+            <p><span style="font-style: italic">Саша задумчивый</span></p>
+    </div>
+    <div class="photo">
+            <p><img src="img/IMG_5503.jpg" width="300" height="378"></p>
+            <p><span style="font-style: italic">Саша на дороге</span></p>
+    </div>
+    <div class="photo">
+            <p><img src="img/IMG_5504.jpg" width="300" height="378"></p>
+            <p><span style="font-style: italic">Саша на тусовке</span></p>
+    </div>
+    <br>
+    <hr width = "990" size = "3" color = "cornflowerblue">
+    <div class="vreska">
+        <p><b>Студент группы УИР-1 :&#41;</b></p>
+    </div>
+    </body>
+</html>
