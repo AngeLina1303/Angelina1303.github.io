@@ -1,0 +1,79 @@
+body {
+    background-color: gainsboro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  .glowing-text{
+    color:#fff;
+    font-size:10em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    text-shadow: 0px -1px 2px black,
+    0px -3px 6px rgba(100, 100, 100, 1),
+    0px -6px 12px rgba(255,150,100,1),
+    0px -10px 20px rgba(255,100,100,1),
+    0px -15px 30px rgba(255,150,50,1),
+    0px -21px 42px rgba(255,0,0,1);
+    animation:fire 0.01s ease infinite,colorSpin 10s linear infinite;
+    font-family:Sans-serif;
+    
+  }
+
+h1{
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 900; 
+}
+  @keyframes fire{
+    10%{
+      text-shadow:0px -4px 8px white,
+    0px -6px 24px rgba(255,200,200,1),
+    0px -12px 48px rgba(255,150,100,1),
+    0px -24px 80px rgba(255,100,100,1),
+    0px -48px 120px rgba(255,50,50,1),
+    0px -64px 168px rgba(255,0,0,1);
+    
+      }
+  }
+  
+  @keyframes colorSpin{
+    to{filter:hue-rotate(360deg)}
+  }
+@keyframes mymove {
+    0% { top: 0px; left: 0px;}
+    25% { top: 0px; left: 68%;}
+    50% { top: 100px; left: 68%;}
+    75% { top: 100px; left: 0px;}
+    100% { top: 0px; left: 0px;}
+}
+
+.button{
+    border: 2px solid white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    
+    transition: color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
