@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+  .glowing-text{
+      
+    width: 100%;
+    max-width: 1000px;
+    color:#fff;
+    font-size:170px;
+    font-family: 'Montserrat', sans-serif;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    animation:fire 0.6s ease infinite,colorSpin 5s linear infinite;
+    
+  }
+
+h1{
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 900; 
+}
+  @keyframes fire{
+    10%{
+      text-shadow:0px -4px 2px purple,
+    0px -6px 24px rgba(255,200,200,1),
+    0px -12px 48px rgba(255,150,100,1),
+    0px -24px 80px rgba(255,100,100,1),
+    0px -48px 120px rgba(255,50,50,1),
+    0px -64px 168px rgba(255,0,0,1);
+    
+      }
+  }
+  
+  @keyframes colorSpin{
+    to{filter:hue-rotate(360deg)}
+  }
+
+.button{
+    border: 2px solid white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    border-radius: 10px;
+    
+    transition: color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
